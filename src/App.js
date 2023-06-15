@@ -8,28 +8,24 @@ function App() {
   const data = React.useMemo(() => fakeData, []);
   const columns = React.useMemo(() => [
     {
-      Header: "ID",
-      accessor: "id"
+      Header: "Title",
+      accessor: "title"
     },
     {
-      Header: "First Name",
-      accessor: "first_name"
+      Header: "Genre",
+      accessor: "genre"
     },
     {
-      Header: "Last Name",
-      accessor: "last_name"
+      Header: "Release Date",
+      accessor: "release_date"
     },
     {
-      Header: "Email",
-      accessor: "email"
+      Header: "Length (minutes)",
+      accessor: "length"
     },
     {
-      Header: "Gender",
-      accessor: "gender"
-    },
-    {
-      Header: "University",
-      accessor: "university"
+      Header: "Rating (1-10)",
+      accessor: "rating"
     }
     ], 
     []
